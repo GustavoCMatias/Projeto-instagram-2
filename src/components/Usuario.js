@@ -15,13 +15,13 @@ export default function Usuario(props) {
     setFoto_perfil(nova_foto)
   }
   return (
-    <div class="usuario">
-      <img src={foto_perfil} onClick={Mudarfoto} />
+    <div class="usuario" data-test="user">
+      <img src={foto_perfil} onClick={Mudarfoto} data-test="profile-image"/>
       <div class="texto">
         <strong>catanacomics</strong>
-        <span>
+        <span data-test="name">
           {nome_perfil}
-          <ion-icon name="pencil" onClick={Mudarnome}></ion-icon>
+          <ion-icon name="pencil" onClick={Mudarnome} data-test="edit-name"></ion-icon>
         </span>
       </div>
     </div>
