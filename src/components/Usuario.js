@@ -8,11 +8,17 @@ export default function Usuario(props) {
 
   function Mudarnome() {
     const novo_nome = prompt('Digite seu novo nome:')
-    setNome_perfil(novo_nome)
+    if (novo_nome!=""){
+      setNome_perfil(novo_nome)
+    }
+    
   }
   function Mudarfoto() {
     const nova_foto = prompt('Digite o link da nova foto:')
-    setFoto_perfil(nova_foto)
+    if (nova_foto!=''){
+      setFoto_perfil(nova_foto)
+    }
+    
   }
   return (
     <div class="usuario" data-test="user">

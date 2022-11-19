@@ -50,7 +50,7 @@ export default function Post(props){
             <div class="fundo">
               <div class="acoes">
                 <div>
-                  <ion-icon name={coracao} onClick={MudarCurtidas} data-test="like-post"></ion-icon>
+                  <ion-icon name={coracao} onClick={MudarCurtidas} data-test="like-post" color="red"></ion-icon>
                   <ion-icon name="chatbubble-outline"></ion-icon>
                   <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
