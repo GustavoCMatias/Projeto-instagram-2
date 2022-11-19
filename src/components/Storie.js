@@ -6,9 +6,7 @@ export default function Storie(props) {
             </div>
             <div class="usuario">
                 {props.usuario}
-                <div class="setinha">
-                    <ion-icon name="chevron-forward-circle"></ion-icon>
-                </div>
+                
             </div>
         </div>
 
